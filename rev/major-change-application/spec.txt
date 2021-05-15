@@ -1,0 +1,7 @@
+several iteration of LCG with seeds from Name, PID, email, time, etc. (Constraint need Z3 to solve)
+
+PID (student ID) format:
+
+H########
+
+where # is a digit in 0-9

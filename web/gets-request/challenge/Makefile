@@ -1,0 +1,1 @@
+primegen: primegen.c

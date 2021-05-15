@@ -1,0 +1,29 @@
+Initial commit
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Author:    Aaron <aaron@cgau.sdc.tf>
+# Date:      Sat Jan 16 12:52:49 2021 -0800
+#
+# interactive rebase in progress; onto 337d75e
+# Last command done (1 command done):
+#    edit 8c6becb Initial commit
+# Next command to do (1 remaining command):
+#    pick 074a3c5 Upgraded to bcrypt
+# You are currently editing a commit while rebasing branch 'master' on '337d75e'.
+#
+#
+# Initial commit
+#
+# Changes to be committed:
+#	new file:   .gitignore
+#	new file:   admin.html
+#	new file:   app.js
+#	new file:   image1.png
+#	new file:   index.html
+#	new file:   package-lock.json
+#	new file:   package.json
+#	new file:   robots.txt
+#	new file:   users.db
+#

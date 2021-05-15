@@ -1,0 +1,13 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  #change to chal name
+  name: major-change-app
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    public: true
+  healthcheck:
+    enabled: false
+  image: eu.gcr.io/sdctf-2021/major-change-app-challenge:2f6276bf4ac3dd763f4a28bc01031551258bd8d9fd618d2fe19f1d081b73f687

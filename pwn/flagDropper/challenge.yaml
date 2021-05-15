@@ -1,0 +1,14 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  #change to chal name
+  name: flag-dropper
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    public: true
+  healthcheck:
+    enabled: true
+    image: eu.gcr.io/sdctf-2021/flag-dropper-healthcheck:fbb1b8fa8f18b2a721953e7fb14b577bc38675c2c573cfde2f9eed50f0709270
+  image: eu.gcr.io/sdctf-2021/flag-dropper-challenge:cd24f7c9b4e237717c0d87d58c2a1b8280014dc5bf01c5df7662904ee8d2f6c7

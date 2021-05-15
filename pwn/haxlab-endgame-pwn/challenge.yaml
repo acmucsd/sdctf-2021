@@ -1,0 +1,13 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  #change to chal name
+  name: haxlab
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    public: true
+  healthcheck:
+    enabled: false
+  image: eu.gcr.io/sdctf-2021/haxlab-challenge:a83ad297d058175f24c9fd6a109eba6eb17eacc71cb06168e49e66c1292bee1f

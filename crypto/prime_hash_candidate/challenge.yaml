@@ -1,0 +1,14 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  #change to chal name
+  name: prime-hash-candidate
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    public: true
+  healthcheck:
+    enabled: true
+    image: eu.gcr.io/sdctf-2021/prime-hash-candidate-healthcheck:d3b3099247ebac1ac9f62f2e3389fafadb03537597ddf0912e65704e3877db84
+  image: eu.gcr.io/sdctf-2021/prime-hash-candidate-challenge:f6914bb19e568acb9f25a7ca2186607325e78f300787e6eed8c804399e4c184d

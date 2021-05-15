@@ -1,0 +1,17 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: git-good
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    public: true
+    ports:
+      - protocol: "HTTPS"
+        targetPort: 1337
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: true
+    image: eu.gcr.io/sdctf-2021/git-good-healthcheck:62c11626ebffc4da1d2d13af8646aa8854f86641e93a1edc43fa57b654d36f7b
+  image: eu.gcr.io/sdctf-2021/git-good-challenge:7c19f7788862d52192f9c0fe2c80dccd6a2c26775dcb83487c4b3d51a5b097b3

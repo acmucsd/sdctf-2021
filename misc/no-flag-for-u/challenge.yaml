@@ -1,0 +1,14 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: no-flag-for-u
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    public: true
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: true
+    image: eu.gcr.io/sdctf-2021/no-flag-for-u-healthcheck:cbd0b4db97c1132e077311196ce2d1ffe470643352a655e2bd550f33921fd6cc
+  image: eu.gcr.io/sdctf-2021/no-flag-for-u-challenge:e6a2bc876422df84a461d43490f712435fd42abb7509be799b0bcf0de714b233

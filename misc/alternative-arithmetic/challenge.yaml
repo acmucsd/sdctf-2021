@@ -1,0 +1,14 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: alternative-arithmetic
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    public: true
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: true
+    image: eu.gcr.io/sdctf-2021/alternative-arithmetic-healthcheck:fbe26b03c30c2b2a16ff3b3cac1fe137ad708a6b08eb26cc702e19ba40cf64b0
+  image: eu.gcr.io/sdctf-2021/alternative-arithmetic-challenge:20d3020768bbb71b868f5cd84a428ac07c147f64fec0fad7ebf37b434660ee5d

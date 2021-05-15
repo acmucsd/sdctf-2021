@@ -1,0 +1,13 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  #change to chal name
+  name: encrypted-communications
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    public: true
+  healthcheck:
+    enabled: false
+  image: eu.gcr.io/sdctf-2021/encrypted-communications-challenge:469966e3e7c81ce90df0c41395f387a90a36b76e04ddec374837797717df739a

@@ -1,0 +1,17 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: gets-request
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    public: true
+    ports:
+      - protocol: "HTTPS"
+        targetPort: 1337
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: true
+    image: eu.gcr.io/sdctf-2021/gets-request-healthcheck:4f5cb12b141d2a60b73ea3adf9e07d2eef77df27d1df4ec9f6d2c4fa8a27cb64
+  image: eu.gcr.io/sdctf-2021/gets-request-challenge:415c674480c256f9d9288e39a885f8d7f83e51cf7d14799ea23521a20c8a8a43

@@ -1,0 +1,17 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: apollo-1337
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    public: true
+    ports:
+      - protocol: "HTTPS"
+        targetPort: 1337
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: true
+    image: eu.gcr.io/sdctf-2021/apollo-1337-healthcheck:7cc2cb8648a71ada784b31d025bbd6b80128273bb91a853629eeb4070e781a45
+  image: eu.gcr.io/sdctf-2021/apollo-1337-challenge:9d8bcbc0b36ca62c316114be6acb9cb21c817e07cd8009a3841d583e6c4eb373

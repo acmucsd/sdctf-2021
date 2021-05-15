@@ -1,0 +1,14 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  #change to chal name
+  name: unique-lasso
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    public: true
+  healthcheck:
+    enabled: true
+    image: eu.gcr.io/sdctf-2021/unique-lasso-healthcheck:9cb518dc291149b5c37de69d9823a9b48c9d48d38fd75857c8731fb4118f74b4
+  image: eu.gcr.io/sdctf-2021/unique-lasso-challenge:6958b1db2ae162fffa0d965cff899fdc6eb723adc5023fc9c20a2cb3056ba0e9

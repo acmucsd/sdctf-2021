@@ -1,0 +1,4 @@
+- Need to get command unbuffer, which is from package `expect` in Ubuntu
+- lolcat, which allows displaying rainbow colored prompt
+- Need netcat (OpenBSD or GNU) for serving
+- Need Python seccomp bindings

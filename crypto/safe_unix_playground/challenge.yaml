@@ -1,0 +1,13 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  #change to chal name
+  name: safe-unix-playground
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    public: true
+  healthcheck:
+    enabled: false
+  image: eu.gcr.io/sdctf-2021/safe-unix-playground-challenge:a6475c27a2fec976f65b589e282cbbda750d4be5ada8c96922a5be726aad1d59

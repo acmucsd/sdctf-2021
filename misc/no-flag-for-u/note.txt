@@ -1,0 +1,2 @@
+challenge/run/opt/.gitkeep is there just to confuse participants, tricking them into thinking that
+the directory is REALLY empty

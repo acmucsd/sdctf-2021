@@ -1,0 +1,14 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  #change to chal name
+  name: una-acies
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    public: true
+  healthcheck:
+    enabled: true
+    image: eu.gcr.io/sdctf-2021/una-acies-healthcheck:63ef3be31dad40c9919a236784d74213f07d976d98e5de38ded4e88e8eb0a7ac
+  image: eu.gcr.io/sdctf-2021/una-acies-challenge:7df06d08f8bf0d2ca0fe25e986e6ad9cbd4997c0d09d6069b06a2e089926a7eb

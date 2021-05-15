@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Admin - Cybersecurity Group at UCSD</title>
+    <meta name="description" content="San Diego CTF - Git Good">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.4/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.4/dist/semantic.min.js"></script>
+    <style type="text/css">
+    body {
+        background-color: #DADADA;
+    }
+
+    body>.grid {
+        height: 100%;
+    }
+
+    .image {
+        margin-top: -100px;
+    }
+
+    .column {
+        max-width: 450px;
+    }
+
+    #response:empty {
+    	display: none;
+    }
+    #response:not(:empty) {
+    	display: block;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="ui middle aligned center aligned grid">
+        <div class="column">
+            <h2 class="ui teal image header">
+                <div class="content">
+                	<i class="user tie icon"></i>
+                    Welcome, please authenticate
+                </div>
+            </h2>
+            <form class="ui large form" >
+                <div class="ui stacked segment">
+                    <div class="field">
+                        <div class="ui left icon input">
+                            <i class="user icon"></i>
+                            <input id="email" type="text" name="email" placeholder="user@cgau.sdc.tf">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui left icon input">
+                            <i class="lock icon"></i>
+                            <input id="password" type="password" name="password" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="ui fluid large teal submit button" onclick="login()">Login</div>
+                </div>
+                <div id="response" class="ui error message"></div>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript">
+	function login() {
+		$("#response").html('');
+		var email = $('#email').val();
+		var password = $('#password').val();
+		$.ajax({
+			type: 'POST',
+			url: '/login',
+			data: {
+				email: email,
+				password: password
+			},
+			success: function(data) {
+				$("#response").html('<strong>FLAG:</strong> ' + data);
+				$("#response").removeClass('error');
+			},
+			error: function(e) {
+				$("#response").html('Login Failed');
+			}
+		});
+	}
+</script>
+
+</html>
