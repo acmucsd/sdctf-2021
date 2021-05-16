@@ -22,9 +22,9 @@ Each challenge is in its own subdirectory with its build files (Ex. Makefiles), 
 
 First time setup for deployment: do the following in the given order
 
-1. Setup `kctf` environment (lol don't underestimate this)
-2. Run command `./build-all.sh`
-3. Run command `kctf chal start` in every directory containing a challenge
+1. Setup [`kctf` environment](https://google.github.io/kctf/) (lol don't underestimate this)
+2. Run command `./build-all.sh`. This is necessary to generate both attachments and deployment files.
+3. Run command `kctf chal start` in every directory containing `challenge.yaml` (Tip: List them using `find . -name challenge.yaml`)
 
 After updating the source code of any challenge(s), remember to run `./build-all.sh` again (or the relevant `Makefile`s) so the attachment and/or deployment files can be updated. Then, run `kctf chal start` on the updated challenges to update the deployment.
 
