@@ -5,9 +5,14 @@
 | k3v1n | none | **keymoon** from **Team zer0pts** | 5 | 799 |
 
 ### prompt
-A flag can be hidden anywhere, even in mathematical inequalities. See if you can unlock the Pro version of graphing calculator Desmos!
+Activate Desmos Pro **today** to get exclusive access to 24/7 math support and tutoring.
+
+Activation Link: https://www.desmos.com/calculator/d5j93bmpor
 
 ### original specification
+
+Link to the **Deobfuscated/admin version of this challenge**: https://www.desmos.com/calculator/iscr9mbdi1
+
 ripoff of hxp CTF 2020's EXCELlent but using https://www.desmos.com/calculator instead of Excel.
 
 Maybe print the decrypted flag using this image decoding formula: https://en.wikipedia.org/wiki/Tupper%27s_self-referential_formula
