@@ -3,15 +3,17 @@
 Here is the challenge and infrastructure files of [San Diego CTF 2021](https://sdc.tf).
 Challenge files include source code that implement the challenge ideas.
 
+This CTF was deployed on [Google Cloud Platform](https://cloud.google.com/) using the brilliant [kCTF](https://github.com/google/kctf) framework. Please check them out.
+
+This CTF used the novel Discord-based [ctfbot](https://github.com/acmucsd/ctfbot) as its frontend.
+
 ### Disclaimer
 
 **San Diego CTF** is managed by the [ACM chapter at UC San Diego's](https://acmucsd.com/) Cyber community.
-We're a bunch of college students, so ***no support will be provided*** for the building, deploying, and managing of these challenges.
+We're a bunch of college students and SDCTF 2021 is over, so ***no support will be provided*** for the building, deploying, and managing of these challenges.
 This repository is published as a courtesy in the hopes that it will be educational to those interested in cybersecurity.
 
-This CTF was deployed on [Google Cloud Platform](https://cloud.google.com/) using the brilliant [kCTF](https://github.com/google/kctf) framework. Please check them out.
 
-This CTF used the novel Discord-based **ctfbot** as its frontend. LINK TO BE ADDED
 
 ## Contents
 
@@ -25,6 +27,7 @@ First time setup for deployment: do the following in the given order
 1. Setup [`kctf` environment](https://google.github.io/kctf/) (lol don't underestimate this)
 2. Run command `./build-all.sh`. This is necessary to generate both attachments and deployment files.
 3. Run command `kctf chal start` in every directory containing `challenge.yaml` (Tip: List them using `find . -name challenge.yaml`)
+You can also currently run challenges locally (without deploying to a running cluster) with `kctf chal debug docker`. See [the official docs](https://google.github.io/kctf/local-testing.html) for more information.
 
 After updating the source code of any challenge(s), remember to run `./build-all.sh` again (or the relevant `Makefile`s) so the attachment and/or deployment files can be updated. Then, run `kctf chal start` on the updated challenges to update the deployment.
 
