@@ -23,3 +23,4 @@ https://www.desmos.com/calculator/p6zpf4l36f
 **flag**: `sdctf{440778777}`
 ### writeups
 - https://hackmd.io/@ptr-yudai/BJ3BCl8dd#Desmos-Pro
+- https://www.csn3rd.com/DesmosProWriteup.pdf

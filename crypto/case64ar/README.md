@@ -16,3 +16,4 @@ Simple encryption on flag with format sdctf{content...}. First apply base64, the
 ### writeups
 - https://hackmd.io/@ptr-yudai/BJ3BCl8dd#Case64AR
 - https://qiita.com/mikecat_mixc/items/5a0c45751b15c8a8513b#case64ar
+- https://github.com/wnfldchen/ctf/blob/main/sdctf21/case64ar.md

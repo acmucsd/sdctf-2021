@@ -18,3 +18,4 @@ Basically an exposed git repo on a webserver that allows the exfiltration of the
 - https://github.com/anandrajaram21/CTFs/blob/main/SanDiegoCTF/web/git-good/writeup.md
 - https://github.com/thewhitecircle/ctf_writeups/blob/main/sdctf_2021/web.md#git-good
 - https://hackmd.io/@ptr-yudai/BJ3BCl8dd#Git-Good
+- https://github.com/wnfldchen/ctf/blob/main/sdctf21/git-good.md

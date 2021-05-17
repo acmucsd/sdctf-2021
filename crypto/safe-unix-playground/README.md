@@ -23,3 +23,4 @@ The participant need to be able to find a command like cat real-flag.txt #any co
 ### writeups
 - https://hackmd.io/@ptr-yudai/BJ3BCl8dd#-safe-unix-playground--rm--rf-
 - https://github.com/3vilbuff3r/ctf-writeups/blob/master/sdctf-2021/crypto/safe-unix-playground-rm-rf.md
+- https://github.com/wnfldchen/ctf/blob/main/sdctf21/safe-unix-playground.md
